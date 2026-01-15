@@ -42,8 +42,7 @@ function Hero() {
           </h2>
 
           <p className="text-gray-600 leading-relaxed">
-            Quaerat quo exercitationem nisi totam tenetur, provident modi,
-            ducimus possimus minima aspernatur fugit porro accusamus.
+            I am a beginner Full Stack Web Developer learning to build modern web applications. I am passionate about coding and excited to grow as a developer.
           </p>
 
           <button className="px-10 py-4 rounded-full bg-blue-500 text-white font-semibold hover:bg-blue-600 transition">
