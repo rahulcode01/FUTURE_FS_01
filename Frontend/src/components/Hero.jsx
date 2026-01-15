@@ -1,6 +1,6 @@
 import TypeWriter from "./TypeWriter";
-
 import { motion } from "framer-motion";
+
 
 function Hero() {
   return (
@@ -19,9 +19,9 @@ function Hero() {
               className="flex flex-col items-center gap-3"
             >
               <img
-                src="/public/portfolioImg.png"
+                src="/portfolioImg.png"
                 alt="Rahul Singh profile"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-full"
               />
             </motion.div>
           </div>
