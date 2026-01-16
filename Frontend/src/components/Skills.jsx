@@ -48,7 +48,7 @@ function Skills() {
                 {/* Technical Skills */}
                 <div className=" rounded-2xl 
   outline outline-1 outline-gray-200
-  shadow-[0_15px_30px_-10px_rgba(0,0,0,0.9)] p-15 "  >
+  shadow-[0_15px_30px_-10px_rgba(0,0,0,0.9)] md:p-15 p-5">
                     <h2 className="text-center text-3xl font-semibold mb-10">
                         Technical Skills
                     </h2>
@@ -59,7 +59,7 @@ function Skills() {
                             return (
                                 <div
                                     key={index}
-                                    className="flex flex-col items-center gap-3"
+                                    className="flex flex-col items-center gap-1 md:gap-3"
                                 >
                                     {/* ICON ONLY ANIMATION */}
                                     <motion.div
@@ -68,7 +68,7 @@ function Skills() {
                                         transition={{ type: "spring", stiffness: 300 }}
                                         className="cursor-pointer"
                                     >
-                                        <Icon className={`text-5xl ${skill.color}`} />
+                                        <Icon className={`text-4xl md:text-5xl ${skill.color}`} />
                                     </motion.div>
 
                                     {/* TEXT (NO EFFECT) */}
@@ -85,7 +85,7 @@ function Skills() {
                 {/* Soft Skills */}
                 <div className="rounded-2xl 
   outline outline-1 outline-gray-200
-  shadow-[0_15px_30px_-10px_rgba(0,0,0,0.9)]  p-15"  >
+  shadow-[0_15px_30px_-10px_rgba(0,0,0,0.9)] p-5 md:p-15"  >
                     <h2 className="text-center text-3xl font-semibold mb-10">
                         Soft Skills
                     </h2>
