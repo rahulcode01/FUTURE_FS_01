@@ -31,7 +31,7 @@ function Hero() {
         <header className="order-2 md:order-1 text-center md:text-left space-y-6 max-w-xl">
 
           <h1 className="font-[Poppins] text-4xl sm:text-5xl font-bold">
-            Rahul Singh
+            Rahul Kumar
           </h1>
 
           <h2 className="text-2xl sm:text-3xl font-semibold">
@@ -45,9 +45,15 @@ function Hero() {
             I am a beginner Full Stack Web Developer learning to build modern web applications. I am passionate about coding and excited to grow as a developer.
           </p>
 
-          <button className="px-10 py-4 rounded-full bg-blue-500 text-white font-semibold hover:bg-blue-600 transition">
+          <a
+            href="/resume/Rahul_Kumar_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-10 py-4 rounded-full bg-blue-500 text-white font-semibold hover:bg-blue-600 transition"
+          >
             Resume
-          </button>
+          </a>
+
 
         </header>
       </div>
