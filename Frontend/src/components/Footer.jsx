@@ -1,16 +1,22 @@
 import {
     FaGithub,
     FaLinkedin,
-    FaTwitter,
-    FaEnvelope,
 } from "react-icons/fa";
 
 const socialMedia = [
-    { icon: FaGithub, color: "text-orange-500" },
-    { icon: FaLinkedin, color: "text-purple-600" },
-    { icon: FaTwitter, color: "text-cyan-500" },
-    { icon: FaEnvelope, color: "text-yellow-500" },
+    {
+        icon: FaGithub,
+        color: "text-white",
+        link: "https://github.com/rahulcode01",
+    },
+    {
+        icon: FaLinkedin,
+        color: "text-[#0A66C2]",
+        link: "https://www.linkedin.com/in/rahul-kumar-88512830b/",
+    },
 ];
+
+
 import { motion } from "framer-motion";
 function Footer() {
     return (
@@ -26,23 +32,26 @@ function Footer() {
                     </p>
                 </div>
                 {/* Center - Social Icons */}
-                <div className="flex gap-6 text-xl">
-                    {
-                        socialMedia.map((app, index) => {
-                            const Icon = app.icon;
-                            return (
-                                <motion.div
-                                    key={index}
-                                    whileHover={{ scale: 1.1, y: -2 }}
-                                    transition={{ duration: 0.3 }}
-                                    className="flex flex-col items-center gap-3 cursor-pointer "
-                                >
-                                    <Icon className={`text-3xl ${app.color}`} />
-                                </motion.div>
-                            );
-                        })
-                    }
+                <div className="flex gap-6">
+                    {socialMedia.map((app, index) => {
+                        const Icon = app.icon;
+
+                        return (
+                            <motion.a
+                                key={index}
+                                href={app.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                whileHover={{ scale: 1.15, y: -3 }}
+                                transition={{ duration: 0.3 }}
+                                className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700 shadow-md"
+                            >
+                                <Icon className={`text-2xl ${app.color}`} />
+                            </motion.a>
+                        );
+                    })}
                 </div>
+
                 {/* Right */}
                 <div className="text-center md:text-right text-sm text-gray-400">
                     © {new Date().getFullYear()} Rahul Singh <br />
